@@ -1,88 +1,252 @@
-/* Space out content a bit */
 body {
-  font-family: 'Open Sans', sans-serif;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f2f2f2;
+  font-size: 16px;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
+/* Global style */
+.btn, .btn-lg {
+  border-radius: 2px;
+}
+.btn, .btn:hover {
+  border: 0;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
+/* Navbar */
+.navbar-inverse {
+  background-color: rgba(41, 128, 185, 0.9);
+  border: 0;
+  margin-bottom: 0px;
 }
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  padding-bottom: 19px;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
 }
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.navbar-inverse .navbar-toggle {
+  border-color: #fff;
 }
-
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #fff;
 }
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+.navbar-inverse .navbar-toggle:hover .icon-bar,
+.navbar-inverse .navbar-toggle:focus .icon-bar {
   background-color: #0099CC;
-  color: #fafafa;
 }
-.jumbotron h1 {
+.navbar.wide-border {
+  border-bottom-color: rgba(100, 100, 100, 0.2);
+  border-bottom-width: 5px;
+  background-clip: padding-box;
+  border-bottom-style: solid;
+}
+
+/* Hero */
+.homepage-hero {
+  padding-top: 60px;
+  background-color: #0099CC;
   text-align: center;
+}
+.homepage-hero .jumbotron {
+  background-color: transparent;
+  margin: 10px 0;
+}
+.homepage-hero .jumbotron h1 {
+  color: #fff;
+  font-size: 32px;
   font-weight: 300;
-  margin-bottom: 20px;
+  text-transform: uppercase;
+  word-spacing: 8px;
+}
+.homepage-hero .jumbotron sup {
+  color: #f0ad4e;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: none;
+  vertical-align: 4px;
+  line-height: 0.5em;
+  margin-left: -8px;
+}
+.homepage-hero .jumbotron .lead {
+  color: #eee;
+  font-weight: 300;
+}
+.homepage-hero .paragraph-buttons {
+  margin-bottom: 5px;
+}
+.homepage-hero .paragraph-link {
+  margin-bottom: 5px;
+}
+.homepage-hero .paragraph-link a {
+  color: #f2f2f2;
+  font-size: 14px;
+}
+.jumbotron {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
+/* Hero */
+.homepage-screenshots {
+  background-color: #0099CC;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
+.homepage-screenshots .carousel-indicators {
+  top: 0px;
+  bottom: auto;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+.homepage-screenshots .carousel-caption {
+  top: 5px;
+  bottom: auto;
+  font-weight: 300;
+  text-shadow: none;
+  font-size: 16px;
+}
+
+.homepage-screenshots .carousel-inner .item {
+  padding-top: 20px;
+  max-height: 450px;
+}
+.os-window {
+  box-shadow: 0px 0px 25px #555;
+}
+.os-window img {
+  width: 100%;
+}
+.os-window--header {
+  color: #666;
+  text-align: center;
+  text-shadow: 0px 1px 1px #fff;
+  background-color: #e8e8e8;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  line-height: 30px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.os-window--buttons {
+  position: absolute;
+  top: 2px;
+  left: 10px;
+}
+.os-window--buttons > span {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.os-window--buttons .os-window--button-close {
+  background-color: #dd7168;
+}
+.os-window--buttons .os-window--button-minimize {
+  background-color: #e5ba51;
+}
+.os-window--buttons .os-window--button-maximize {
+  background-color: #60CB8D;
+}
+
+/* Technos */
+.homepage-technos {
+  text-align: center;
+  min-height: 90px;
+  line-height: 90px;
+  background-color: #cddbe4;
+  /*color: #fff;*/
+  font-size: 24px;
+  font-weight: 300;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.homepage-technos p {
+  display: inline-block;
+  padding: 0 30px;
+}
+.homepage-technos img {
+  padding-right: 5px;
+}
+
+/* Features */
+.homepage-features {
+  padding: 30px 0;
+}
+.homepage-features h3 {
+  font-size: 24px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.homepage-features .feature-icon {
+  color: #1373B1;
+  font-size: 40px;
+  height: 45px;
+}
+
+/* Philosophy */
+.homepage-philosophy {
+  padding: 30px 0;
+  background-color: #fff;
+}
+
+.homepage-philosophy h2 {
+  margin-top: 0;
+  background-color: #fff;
+}
+
+.homepage-github {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+.homepage-github p {
+  display: inline-block;
+  margin: 10px;
+}
+.homepage-github p span {
+  font-weight: 300;
+}
+.homepage-github .btn-default {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 0 10px;
+  line-height: 1.2em;
+}
+.homepage-github .btn-default .fa {
+  padding-right: 5px;
+  font-size: 1.2em;
+}
+.homepage-github .btn-default:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  font-weight: 300;
+}
+.footer a {
+  color: #0099CC;
+}
+.footer ul.list-inline li {
+  margin: 0;
+  padding-right: 0;
+  padding-left: 5px;
+}
+.footer ul.list-inline li:before {
+  content: '•';
+  padding-right: 7px;
+}
+.footer ul.list-inline li:first-child:before {
+  content: '';
+  padding-right: 0;
 }

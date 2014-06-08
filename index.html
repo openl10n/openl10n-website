@@ -5,9 +5,12 @@
   <title>OpenLocalization (openl10n)</title>
   <meta name="description" content="Open-source translation management web-app">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- Bootstrap core CSS -->
   <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/assets/css/animate.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="/assets/css/style.css" rel="stylesheet">
@@ -18,72 +21,239 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div class="container">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
 
-    <div class="jumbotron">
-      <h1>
-        Open<strong>Localization</strong>
-      </h1>
+        <a class="navbar-brand" href="#">
+          OpenLocalization
+        </a>
+      </div>
 
-      <p class="lead">
-        Open-source translation management web-app
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="http://get.openl10n.io">
+              Getting started
+            </a>
+          </li>
+          <li>
+            <a href="/demo">
+              Demo
+            </a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="homepage-hero">
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="animated fadeInDown">
+          Open-source localization management
+          <sup>beta</sup>
+        </h1>
+
+        <p class="lead animated fadeInDown">
+          Currently in active development, but go ahead and try it if you're curious!
+        </p>
+
+        <p class="paragraph-buttons animated fadeInDown">
+          <a class="btn btn-lg btn-success" href="http://get.openl10n.io">
+            Getting started
+          </a>
+
+          <a class="btn btn-lg btn-warning" href="/demo">
+            Live demo
+          </a>
+        </p>
+
+        <p class="paragraph-link animated fadeInDown">
+          <a href="https://github.com/openl10n/openl10n" class="btn btn-link">
+            View project on GitHub
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="homepage-screenshots hidden-sm hidden-xs">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators animated fadeIn">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="carousel-caption wow fadeIn">
+            Easy translate your uploaded resources with its UX friendly interface.
+          </div>
+
+          <div class="os-window wow fadeInUp" data-wow-duration="1s" style="max-width:860px;margin:auto;margin-top:50px;">
+            <div class="os-window--header">
+              <div class="os-window--buttons">
+                <span class="os-window--button-close"></span>
+                <span class="os-window--button-minimize"></span>
+                <span class="os-window--button-maximize"></span>
+              </div>
+
+              OpenLocalization
+            </div>
+            <img src="/assets/images/screenshot-editor.png" alt="Openl10n editor screenshot">
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <!-- <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a> -->
+    </div>
+  </div>
+
+  <div class="homepage-technos">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 wow fadeInLeft">
+          <img src="/assets/images/symfony-logo.png" alt="">
+          Solid Symfony REST API backend
+        </div>
+        <div class="col-sm-6 wow fadeInLeft">
+          <img src="/assets/images/backbonejs-logo.png" alt="">
+          Beautiful BackboneJS frontend
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="homepage-features">
+    <div class="container">
+      <div class="row" data-wow-offset="50">
+        <div class="col-sm-4 wow fadeInLeft" data-wow-delay="0.1s">
+          <i class="feature-icon fa fa-rocket"></i>
+          <h3>Cool feature 1</h3>
+          <p>
+            Nullam id dolor id nibh ultricies vehicula ut id elit.
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+            Nullam id dolor id nibh ultricies vehicula ut id elit.
+          </p>
+          <p>
+            <a href="#">Here a link</a>
+          </p>
+        </div>
+        <div class="col-sm-4 wow fadeInLeft" data-wow-delay="0.3s">
+          <i class="feature-icon fa fa-cloud"></i>
+          <h3>Cool feature 2</h3>
+          <p>
+            Donec sed odio dui.
+            Etiam porta sem malesuada magna mollis euismod.
+            Donec sed odio dui.
+            Nullam id dolor id nibh ultricies vehicula ut id elit.
+          </p>
+          <p>
+            <a href="#">Here a link</a>
+          </p>
+        </div>
+
+        <div class="col-sm-4 wow fadeInLeft" data-wow-delay="0.5s">
+          <i class="feature-icon fa fa-code"></i>
+          <h3>Cool feature 3</h3>
+          <p>
+            Donec sed odio dui.
+            Etiam porta sem malesuada magna mollis euismod.
+            Etiam porta sem malesuada magna mollis euismod.
+            Nullam id dolor id nibh ultricies vehicula ut id elit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="homepage-philosophy">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Why this new translation app?</h2>
+          <p class="wow fadeInDown">
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+            Etiam porta sem malesuada magna mollis euismod.
+            Nullam id dolor id nibh ultricies vehicula ut id elit.
+          </p>
+
+          <p class="wow fadeInDown" data-wow-delay="0.3s">
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+            Nullam id dolor id nibh ultricies vehicula ut id elit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="homepage-github">
+    <div class="container">
+      <p>
+        <span>
+          Fork and contribute
+        </span>
+        <a href="https://github.com/openl10n/openl10n" class="btn btn-default btn-lg">
+          <i class="fa fa-github"></i>
+          GitHub
+        </a>
       </p>
 
       <p>
-        <a class="btn btn-lg btn-default" href="https://github.com/openl10n/openl10n" role="button">
-          <i class="fa fa-github"></i>
-          View on GitHub
-        </a>
-
-        <a class="btn btn-lg btn-warning email-link" href="#" role="button" id="email">
-          <i class="fa fa-envelope"></i>
-          Get in touch
+        <span>
+          Give your feedback
+        </span>
+        <a href="#" class="btn btn-default btn-lg">
+          <i class="fa fa-paper-plane-o"></i>
+          Contact
         </a>
       </p>
     </div>
+  </div>
 
-    <p class="lead">
-      This project is currently in <strong>active development</strong>.
-      There is no alpha/beta/whatever release yet.
-    </p>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>
+        Developed with love by <a href="http://twitter.com/mattketmo" target="_blank">@MattKetmo</a>.
+      </p>
 
-    <p class="lead">
-      If you're interested in the project, just <a href="#" class="email-link">drop a mail</a>. ;)
-    </p>
+      <p>Code licensed under <a href="https://github.com/openl10n/openl10n/blob/master/LICENSE" target="_blank">MIT</a></p>
 
-    <!--
-    <div class="row marketing">
-      <div class="col-lg-6">
-        <h4>Subheading</h4>
-        <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-        <h4>Subheading</h4>
-        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-        <h4>Subheading</h4>
-        <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-      </div>
-
-      <div class="col-lg-6">
-        <h4>Subheading</h4>
-        <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-        <h4>Subheading</h4>
-        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-        <h4>Subheading</h4>
-        <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-      </div>
+      <ul class="list-inline">
+        <li>Currently in v0.1</li>
+        <li><a href="https://github.com/openl10n/openl10n">GitHub</a></li>
+        <li><a href="#">Documentation</a></li>
+        <!-- <li><a href="../about/">About</a></li> -->
+        <li><a href="https://github.com/openl10n/openl10n/issues?state=open">Issues</a></li>
+        <li><a href="https://github.com/openl10n/openl10n/releases">Releases</a></li>
+      </ul>
     </div>
-    -->
-  </div> <!-- /container -->
+  </footer>
 
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/wow.min.js"></script>
   <script>
-    $('.email-link').attr("href", "mail" + "to:" + "matt" + "hieu@mo" + "quet.net" + "?subject=" + "OpenLocalization");
+    new WOW().init();
   </script>
 
   <script>
