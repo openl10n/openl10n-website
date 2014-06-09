@@ -14,7 +14,8 @@ body {
 
 /* Navbar */
 .navbar-inverse {
-  background-color: rgba(41, 128, 185, 0.9);
+  /*background-color: rgba(41, 128, 185, 0.9);*/
+  background-color: rgba(0, 153, 204, 0.9);
   border: 0;
   margin-bottom: 0px;
 }
@@ -42,7 +43,7 @@ body {
 
 /* Hero */
 .homepage-hero {
-  padding-top: 60px;
+  padding-top: 30px;
   background-color: #0099CC;
   text-align: center;
 }
@@ -72,6 +73,9 @@ body {
 }
 .homepage-hero .paragraph-buttons {
   margin-bottom: 5px;
+}
+.homepage-hero .paragraph-buttons .btn {
+  margin: 0 5px;
 }
 .homepage-hero .paragraph-link {
   margin-bottom: 5px;
