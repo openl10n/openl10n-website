@@ -33,10 +33,10 @@ template: base.swig
   </div>
 </div>
 
-<div class="homepage-screenshots hidden-sm hidden-xs">
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div class="homepage-screenshots hidden-xs">
+  <div id="carousel-example-generic" class="carousel slide animated fadeInUp" data-ride="carousel">
     <!-- Indicators -->
-    <ol class="carousel-indicators animated fadeIn">
+    <ol class="carousel-indicators">
       <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
       <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     </ol>
@@ -44,21 +44,70 @@ template: base.swig
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <div class="carousel-caption wow fadeIn">
+        <div class="carousel-caption">
           Easy translate your uploaded resources with its UX friendly interface.
         </div>
 
-        <div class="os-window wow fadeInUp" data-wow-duration="1s" style="max-width:860px;margin:auto;margin-top:50px;">
-          <div class="os-window--header">
-            <div class="os-window--buttons">
-              <span class="os-window--button-close"></span>
-              <span class="os-window--button-minimize"></span>
-              <span class="os-window--button-maximize"></span>
-            </div>
+        <div class="screenshot-content">
+          <div class="os-window screenshot-editor">
+            <div class="os-window--header">
+              <div class="os-window--buttons">
+                <span class="os-window--button-close"></span>
+                <span class="os-window--button-minimize"></span>
+                <span class="os-window--button-maximize"></span>
+              </div>
 
-            OpenLocalization
+              OpenLocalization
+            </div>
+            <img src="/assets/images/screenshot-editor.png" alt="Openl10n editor screenshot">
           </div>
-          <img src="/assets/images/screenshot-editor.png" alt="Openl10n editor screenshot">
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="carousel-caption">
+          Easily integrate OpenLocalization with your development workflow using the
+          CLI tool or directly via the REST API.
+        </div>
+
+        <div class="screenshot-content">
+          <div class="os-window screenshot-editor" >
+            <div class="os-window--header">
+              <div class="os-window--buttons">
+                <span class="os-window--button-close"></span>
+                <span class="os-window--button-minimize"></span>
+                <span class="os-window--button-maximize"></span>
+              </div>
+
+              OpenLocalization
+            </div>
+            <img src="/assets/images/screenshot-resources.png" alt="Openl10n editor screenshot">
+          </div>
+
+          <div class="os-window screenshot-console-push">
+            <div class="os-window--header">
+              <div class="os-window--buttons">
+                <span class="os-window--button-void"></span>
+                <span class="os-window--button-void"></span>
+                <span class="os-window--button-void"></span>
+              </div>
+
+              Terminal
+            </div>
+            <pre class="inner">
+<span style="color:#67FBFC">$</span> openl10n push
+<span style="color:#00C120">Creating</span> resource <span style="color:#C7C327">resources/locales/en.yml</span>
+<span style="color:#00C120">Uploading</span> file <span style="color:#C7C327">resources/locales/en.yml</span>
+<span style="color:#00C120">Adding</span> locale <span style="color:#C7C327">es</span>
+<span style="color:#00C120">Uploading</span> file <span style="color:#C7C327">resources/locales/es.yml</span>
+<span style="color:#00C120">Adding</span> locale <span style="color:#C7C327">fr</span>
+<span style="color:#00C120">Uploading</span> file <span style="color:#C7C327">resources/locales/fr.yml</span>
+<span style="color:#00C120">Adding</span> locale <span style="color:#C7C327">it</span>
+<span style="color:#00C120">Uploading</span> file <span style="color:#C7C327">resources/locales/it.yml</span>
+<span style="color:#00C120">Adding</span> locale <span style="color:#C7C327">pt</span>
+<span style="color:#00C120">Uploading</span> file <span style="color:#C7C327">resources/locales/pt.yml</span>
+            </pre>
+          </div>
         </div>
       </div>
     </div>
@@ -92,40 +141,58 @@ template: base.swig
   <div class="container">
     <div class="row" data-wow-offset="50">
       <div class="col-sm-4 wow fadeInLeft" data-wow-delay="0.1s">
-        <i class="feature-icon fa fa-rocket"></i>
-        <h3>Cool feature 1</h3>
-        <p>
-          Nullam id dolor id nibh ultricies vehicula ut id elit.
-          Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
-          Nullam id dolor id nibh ultricies vehicula ut id elit.
-        </p>
-        <p>
-          <a href="#">Here a link</a>
-        </p>
+        <div class="media">
+          <span class="pull-left">
+            <i class="feature-icon fa fa-rocket"></i>
+          </span>
+          <div class="media-body">
+            <h3 class="media-heading">Cool feature 1</h3>
+            <p>
+              Nullam id dolor id nibh ultricies vehicula ut id elit.
+              Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+              Nullam id dolor id nibh ultricies vehicula ut id elit.
+            </p>
+            <p>
+              <a href="#">Here a link</a>
+            </p>
+          </div>
+        </div>
       </div>
       <div class="col-sm-4 wow fadeInLeft" data-wow-delay="0.3s">
-        <i class="feature-icon fa fa-cloud"></i>
-        <h3>Cool feature 2</h3>
-        <p>
-          Donec sed odio dui.
-          Etiam porta sem malesuada magna mollis euismod.
-          Donec sed odio dui.
-          Nullam id dolor id nibh ultricies vehicula ut id elit.
-        </p>
-        <p>
-          <a href="#">Here a link</a>
-        </p>
+        <div class="media">
+          <span class="pull-left">
+            <i class="feature-icon fa fa-cloud"></i>
+          </span>
+          <div class="media-body">
+            <h3 class="media-heading">Cool feature 2</h3>
+            <p>
+              Donec sed odio dui.
+              Etiam porta sem malesuada magna mollis euismod.
+              Donec sed odio dui.
+              Nullam id dolor id nibh ultricies vehicula ut id elit.
+            </p>
+            <p>
+              <a href="#">Here a link</a>
+            </p>
+          </div>
+        </div>
       </div>
 
       <div class="col-sm-4 wow fadeInLeft" data-wow-delay="0.5s">
-        <i class="feature-icon fa fa-code"></i>
-        <h3>Cool feature 3</h3>
-        <p>
-          Donec sed odio dui.
-          Etiam porta sem malesuada magna mollis euismod.
-          Etiam porta sem malesuada magna mollis euismod.
-          Nullam id dolor id nibh ultricies vehicula ut id elit.
-        </p>
+        <div class="media">
+          <span class="pull-left">
+            <i class="feature-icon fa fa-code"></i>
+          </span>
+          <div class="media-body">
+            <h3 class="media-heading">Cool feature 3</h3>
+            <p>
+              Donec sed odio dui.
+              Etiam porta sem malesuada magna mollis euismod.
+              Etiam porta sem malesuada magna mollis euismod.
+              Nullam id dolor id nibh ultricies vehicula ut id elit.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
