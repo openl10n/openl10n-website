@@ -78,7 +78,8 @@ gulp.task('site', function() {
     .use(markdown())
 
     .use(permalinks({
-      pattern: ':title'
+      pattern: ':title',
+      relative: false
     }))
 
     .use(templates({
