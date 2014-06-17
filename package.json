@@ -3,7 +3,7 @@
   "repository": "git://github.com:openl10n/openl10n.io.git",
   "devDependencies": {
     "async": "^0.2",
-    "gulp": "~3.6",
+    "gulp": "~3.8",
     "gulp-clean": "^0.3.0",
     "gulp-concat": "^2.2.0",
     "gulp-connect": "^2.0.5",
