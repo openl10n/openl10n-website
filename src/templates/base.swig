@@ -38,7 +38,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="http://get.openl10n.io">
+            <a href="http://docs.openl10n.io">
               Getting started
             </a>
           </li>
@@ -57,18 +57,17 @@
   <footer class="footer" role="contentinfo">
     <div class="container">
       <p>
-        Developed with love by <a href="http://twitter.com/mattketmo" target="_blank">@MattKetmo</a>.
+        Developed with &nbsp;❤&nbsp; by <a href="http://twitter.com/mattketmo" target="_blank">@MattKetmo</a>.
       </p>
 
       <p>Code licensed under <a href="https://github.com/openl10n/openl10n/blob/master/LICENSE" target="_blank">MIT</a></p>
 
       <ul class="list-inline">
         <li>Currently in v0.1</li>
-        <li><a href="https://github.com/openl10n/openl10n">GitHub</a></li>
-        <li><a href="#">Documentation</a></li>
-        <!-- <li><a href="../about/">About</a></li> -->
-        <li><a href="https://github.com/openl10n/openl10n/issues?state=open">Issues</a></li>
-        <li><a href="https://github.com/openl10n/openl10n/releases">Releases</a></li>
+        <li><a href="https://github.com/openl10n/openl10n" target="_blank">GitHub</a></li>
+        <li><a href="http://docs.openl10n.io/">Documentation</a></li>
+        <li><a href="https://github.com/openl10n/openl10n/issues?state=open" target="_blank">Issues</a></li>
+        <li><a href="https://github.com/openl10n/openl10n/releases" target="_blank">Releases</a></li>
       </ul>
     </div>
   </footer>
