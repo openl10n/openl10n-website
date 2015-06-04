@@ -16,7 +16,8 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <meta name="google-site-verification" content="olKGwsetC0ZHP8zDLPcQ6hZdJDuce5d5TzHJPTqTTTk" />
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
