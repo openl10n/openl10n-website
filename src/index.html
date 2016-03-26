@@ -1,252 +1,71 @@
----
-template: base.swig
----
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OpenLocalization (openl10n)</title>
+  <meta name="description" content="Open-source translation management web-app">
 
-<div class="homepage-hero">
-  <div class="container">
-    <div class="jumbotron">
-      <h1 class="animated fadeInDown">
-        Open-source localization management
-        <sup>beta</sup>
-      </h1>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <p class="lead animated fadeInDown">
-        Currently in active development, but go ahead and try it if you're curious!
-      </p>
+  <!-- Custom styles for this template -->
+  <link href="/assets/style.css" rel="stylesheet">
 
-      <p class="paragraph-buttons animated fadeInDown">
-        <a class="btn btn-lg btn-success" href="http://docs.openl10n.io">
-          Getting started
-        </a>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <meta name="google-site-verification" content="olKGwsetC0ZHP8zDLPcQ6hZdJDuce5d5TzHJPTqTTTk" />
+</head>
+<body>
 
-        <a class="btn btn-lg btn-warning" href="/demo">
-          Live demo
-        </a>
-      </p>
+  <img class="main-logo" src="./assets/logo-white.svg" />
+  <h1 class="main-title">
+    <span class="part-1">Open</span><span class="part-2">l10n</span>
+  </h1>
+  <h2 class="main-subtitle">
+    Open-source localization management
+  </h2>
 
-      <p class="paragraph-link animated fadeInDown">
-        <a href="https://github.com/openl10n/openl10n" class="btn btn-link" target="_blank">
-          View project on GitHub
-        </a>
-      </p>
-    </div>
-  </div>
-</div>
+  <p class="links">
+    <a href="https://github.com/openl10n/openl10n">View on Github</a>
+  </p>
 
-<div class="homepage-screenshots hidden-xs">
-  <div id="carousel-example-generic" class="carousel slide animated fadeInUp" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <div class="carousel-caption">
-          Easily translate your uploaded resources with its UX friendly interface.
-        </div>
-
-        <div class="screenshot-content">
-          <div class="os-window screenshot-editor">
-            <div class="os-window--header">
-              <div class="os-window--buttons">
-                <span class="os-window--button-close"></span>
-                <span class="os-window--button-minimize"></span>
-                <span class="os-window--button-maximize"></span>
-              </div>
-
-              OpenLocalization
-            </div>
-            <img src="/assets/images/screenshot-editor.png" alt="Openl10n editor screenshot">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="carousel-caption">
-          Easily integrate OpenLocalization with your development workflow using the
-          CLI tool or directly via the REST API.
-        </div>
-
-        <div class="screenshot-content">
-          <div class="os-window screenshot-editor" >
-            <div class="os-window--header">
-              <div class="os-window--buttons">
-                <span class="os-window--button-close"></span>
-                <span class="os-window--button-minimize"></span>
-                <span class="os-window--button-maximize"></span>
-              </div>
-
-              OpenLocalization
-            </div>
-            <img src="/assets/images/screenshot-resources.png" alt="Openl10n editor screenshot">
-          </div>
-
-          <div class="os-window screenshot-console-push">
-            <div class="os-window--header">
-              <div class="os-window--buttons">
-                <span class="os-window--button-void"></span>
-                <span class="os-window--button-void"></span>
-                <span class="os-window--button-void"></span>
-              </div>
-
-              Terminal
-            </div>
-            <pre class="inner">
-<span style="color:#67FBFC">$</span> openl10n push
-<span style="color:#00C120">Creating</span> resource <span style="color:#C7C327">resources/locales/en.yml</span>
-<span style="color:#00C120">Uploading</span> file <span style="color:#C7C327">resources/locales/en.yml</span>
-<span style="color:#00C120">Adding</span> locale <span style="color:#C7C327">es</span>
-<span style="color:#00C120">Uploading</span> file <span style="color:#C7C327">resources/locales/es.yml</span>
-<span style="color:#00C120">Adding</span> locale <span style="color:#C7C327">fr</span>
-<span style="color:#00C120">Uploading</span> file <span style="color:#C7C327">resources/locales/fr.yml</span>
-<span style="color:#00C120">Adding</span> locale <span style="color:#C7C327">it</span>
-<span style="color:#00C120">Uploading</span> file <span style="color:#C7C327">resources/locales/it.yml</span>
-<span style="color:#00C120">Adding</span> locale <span style="color:#C7C327">pt</span>
-<span style="color:#00C120">Uploading</span> file <span style="color:#C7C327">resources/locales/pt.yml</span>
-            </pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Controls -->
-    <!-- <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a> -->
-  </div>
-</div>
-
-<div class="homepage-technos">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 wow fadeInLeft">
-        <img src="/assets/images/symfony-logo.png" alt="">
-        Powerful Symfony REST API backend
-      </div>
-      <div class="col-sm-6 wow fadeInLeft">
-        <img src="/assets/images/backbonejs-logo.png" alt="">
-        Enjoy the BackboneJS frontend
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="homepage-features">
-  <div class="container">
-    <div class="row" data-wow-offset="50">
-      <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.1s">
-        <div class="media">
-          <span class="pull-left">
-            <i class="feature-icon fa fa-puzzle-piece"></i>
-          </span>
-          <div class="media-body">
-            <h3 class="media-heading">Simplicity in mind</h3>
-            <p>
-              OpenLocalization has been designed to be very easy to use.
-              No complicated settings or uncomprehensible menu.
-              The UI/UX aims to be as simple as possible without
-              losing too many features.
-            </p>
-            <p>
-              <a href="/demo">Try the live demo</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.3s">
-        <div class="media">
-          <span class="pull-left">
-            <i class="feature-icon fa fa-bolt"></i>
-          </span>
-          <div class="media-body">
-            <h3 class="media-heading">Flexible</h3>
-            <p>
-              Developed as an API first, it should work for any application,
-              no matter the programming language you use.
-              Simply drop the configuration file in the root
-              of your project, and you're done.
-            </p>
-            <p>
-              <a href="http://docs.openl10n.io">Learn how it works</a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.5s">
-        <div class="media">
-          <span class="pull-left">
-            <i class="feature-icon fa fa-code"></i>
-          </span>
-          <div class="media-body">
-            <h3 class="media-heading">Run your own instance</h3>
-            <p>
-              Don't be dependent on a third-party service.
-              Run this web-app on your servers
-              (integration with LDAP soon).
-              It's free, it's open-source.
-              You can even contribute to adapt it better for your
-              business.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="homepage-philosophy">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7">
-        <h2>Why this new translation app?</h2>
-
-        <p class="wow fadeInDown">
-          I started this project because I couldn't find any good and free
-          translation tools for a simple usage.
-
-          You may find some nice SaaS products
-          (eg. <a href="http://transifex.com/">Transifex</a>, <a href="http://crowdin.net/">Crowdin</a>),
-          but not enough satisfying if you don't want to depend on an external
-          service, or if you have really simple use cases.
-        </p>
-
-        <p class="wow fadeInDown" data-wow-delay="0.1s">
-          OpenLocalization goal is to bring a powerful tool that
-          will match any (or most of) needs, and which could be easily
-          integrated in your development workflow.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="homepage-github">
-  <div class="container">
+  <div class="description">
     <p>
-      <span>
-        Fork and contribute
-      </span>
-      <a href="https://github.com/openl10n/openl10n" class="btn btn-default btn-lg" target="_blank">
-        <i class="fa fa-github"></i>
-        GitHub
-      </a>
+      Project development is currently <b>paused</b>.
     </p>
 
     <p>
-      <span>
-        Give your feedback
-      </span>
-      <a href="/" class="btn btn-default btn-lg link-contact" target="_blank">
-        <i class="fa fa-paper-plane-o"></i>
-        Contact
-      </a>
+      Due to lack of time those last months I prefered to work on a private fork and
+      postpone the next public release until I reach a better <em>"minimal viable product"</em>.
+      But don't expect it soon.
+    </p>
+
+    <p>
+      Next release will require exclusively PHP7 and PostgreSQL.
+      Most of the current source code is being rewritten.
+    </p>
+
+    <p>
+      <b>I'm also looking for someone to help on the front-end part.</b>
+      I started a single page app with AngularJS but I would be very
+      interessed in having a more framework independent web-app,
+      and I think I'll finish doing some <b>React</b>.
+      If you're that person don't hesitate to
+      <a href="mailto:contact@openl10n.io">contact me</a> :)
+    </p>
+
+    <p>
+      With love, <br>
+      @MattKetmo
     </p>
   </div>
-</div>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-23657373-4', 'openl10n.io');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
+
